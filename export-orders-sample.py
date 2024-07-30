@@ -15,7 +15,7 @@ def download_rest_collection(name, query):
     total = 0
     objects = []
 
-    print(f'Downloading {name} collection: {query}')
+    print(f'downloading {name} collection: {query}')
     idx = 0
 
     client = httpx.Client(http2=True)
@@ -35,6 +35,10 @@ def download_rest_collection(name, query):
                 "Authorization": f"Bearer {cfg.mpt_platform_token}",
             }
         )
+
+        if result.status_code != 200:
+            raise Exception(f'failed to read, please check that your API Token ({cfg.mpt_platform_token}) is valid.')
+
         ret = json.loads(result.text)
 
         total = ret['$meta']['pagination']['total']
@@ -61,6 +65,7 @@ def save_rest_collection(collection, fname):
     txt = json.dumps(collection, indent=4)
     with open(fname, "w") as f:
         f.write(txt)
+
 
 def convert_json_to_excel(collection, mapping, fname):
 
@@ -119,6 +124,7 @@ def main():
     }
 
     convert_json_to_excel(orders, json_to_excel_mapping, './output/orders.xlsx')
+
 
 if __name__ == '__main__':
     main()
