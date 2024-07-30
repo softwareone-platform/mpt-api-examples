@@ -1,0 +1,1 @@
+sample running results (like json and excel files) will be stored in this folder

@@ -1,0 +1,101 @@
+{
+    "id": "ORD-1234-5678-9101",
+    "href": "/commerce/orders/ORD-1234-5678-9101",
+    "type": "Purchase",
+    "status": "Completed",
+    "notes": "",
+    "statusNotes": {
+        "id": "E000000"
+    },
+    "template": {
+        "id": "TPL-1122-3344-5566",
+        "href": "/products/templates/TPL-1122-3344-5566",
+        "name": "Default order completed"
+    },
+    "listing": {
+        "id": "LST-9988-7766",
+        "href": "/listings/LST-9988-7766"
+    },
+    "authorization": {
+        "id": "AUT-4433-2211",
+        "href": "/authorizations/AUT-4433-2211",
+        "name": "Standard Authorization",
+        "currency": "USD"
+    },
+    "agreement": {
+        "id": "AGR-5566-7788-9900",
+        "href": "/commerce/agreements/AGR-5566-7788-9900",
+        "status": "Active",
+        "name": "Marketplace Agreement for XYZ Corp"
+    },
+    "externalIds": {
+        "client": "REFERENCE-002",
+        "vendor": "P876543210"
+    },
+    "price": {
+        "SPx1": 0.0,
+        "SPxY": 120.0,
+        "SPxM": 10,
+        "currency": "EUR"
+    },
+    "product": {
+        "id": "PRD-3344-5566",
+        "href": "/products/PRD-3344-5566",
+        "name": "Marketplace Subscription",
+        "externalIds": {
+            "operations": "MS"
+        },
+        "icon": "/v1/products/PRD-3344-5566/icon",
+        "status": "Published"
+    },
+    "client": {
+        "id": "ACC-2233-4455",
+        "href": "/accounts/accounts/ACC-2233-4455",
+        "type": "Client",
+        "status": "Enabled",
+        "name": "XYZ Corp"
+    },
+    "licensee": {
+        "id": "LCE-6677-8899-0011",
+        "href": "/accounts/licensees/LCE-6677-8899-0011",
+        "name": "Department A",
+        "externalId": "DEPTA"
+    },
+    "buyer": {
+        "id": "BUY-9988-7766",
+        "href": "/accounts/buyers/BUY-9988-7766",
+        "name": "Buyer"
+    },
+    "seller": {
+        "id": "SEL-3322-1100",
+        "href": "/accounts/sellers/SEL-3322-1100",
+        "externalId": "EU",
+        "name": "Europe"
+    },
+    "vendor": {
+        "id": "ACC-9988-1122",
+        "href": "/accounts/accounts/ACC-9988-1122",
+        "type": "Vendor",
+        "status": "Active",
+        "icon": "/v1/accounts/accounts/ACC-9988-1122/icon",
+        "name": "Vendor Corp"
+    },
+    "audit": {
+        "created": {
+            "at": "2024-01-01T12:00:00.000Z",
+            "by": {
+                "id": "USR-1234-5678",
+                "href": "/accounts/users/USR-1234-5678",
+                "name": "John Doe"
+            }
+        },
+        "updated": {
+            "at": "2024-01-02T12:00:00.000Z",
+            "by": {
+                "id": "TKN-9988-5544",
+                "href": "/accounts/api-tokens/TKN-9988-5544",
+                "name": "API Token"
+            }
+        }
+    }
+}

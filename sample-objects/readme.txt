@@ -1,0 +1,1 @@
+examples of objects payloads are stored in this folder
