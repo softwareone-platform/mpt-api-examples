@@ -32,13 +32,22 @@ self.mpt_platform_token = 'paste-your-token-here'
 
 #### Run a sample
 
+Each example is a standalone python script that could be launched as illustrated below, using the orders example:
+
 ```bash
 python ./export-orders-sample.py
+
+downloading orders collection: /commerce/orders?select=audit&order=-audit.created.at
+  0. iterating orders offset=0 total=0 ...
+collection has been retreived successfully.
+total objects downloaded: 42
+writing ./output/orders.json ...
+saving ./output/orders.xlsx ...
 ```
 
 ## Documentation
 
-You can find the full documentation of the SoftwareOne Marketplace Platform API at [SoftwareOne Platform Documentation](https://docs.platform.softwareone.com/). The documentation includes detailed descriptions of the API endpoints, request and response formats, and example use cases.
+You can find the full documentation of the SoftwareOne Marketplace Platform API at [SoftwareOne Platform REST API Documentation](https://docs.platform.softwareone.com/developer-resources/rest-api). The documentation includes detailed descriptions of the API endpoints, request and response formats, and example use cases.
 
 ## Contributing
 
